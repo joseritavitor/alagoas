@@ -1,0 +1,126 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+    --azul:#6495ed;
+    --branca:#ffffff;
+    --amarelo:rgb(216, 216, 138);
+    --laranja:#ff4500;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+
+body{
+    background: var(--branca);
+    font-family: 'Arial', Times, serif;
+    color:white;
+}
+
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--laranja);
+    font-family: 'Arial Black', Times;
+    font-size: 20px;
+}
+
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+
+}
+
+header nav a:hover{
+    color:#fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 15px;
+    background:url('img/alagoas1.jpg');
+    height: 600px;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.filme-principal .descricao{
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: 5 px;
+    color: white;
+    margin-top: 5px;
+    float: left;
+
+    padding: 15px 18px 15PX 12PX;
+    margin-right: 15px;
+    font-size: 15px;
+
+    cursor:pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.container{
+    margin-left: 20px;
+    
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.filme-principal .container{
+    width: 80%;
+}
+
+.box-image{
+    height: 80%;
+    width: 80%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+.container img{
+    height:15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
